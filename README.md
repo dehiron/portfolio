@@ -1,7 +1,4 @@
-# Hidehiro Aya's portfolio site
-
-やることメモ・・・
-
+# やることメモ・・・
 1. プロジェクトの作成/InitialCommit/Vercelにデプロイ(https://portfolio-inky-ten-65.vercel.app/)
 2. サイト内要素の構築
 3. サイトデザイン作成
