@@ -40,7 +40,7 @@ const index = () => {
           />
           <Typed
             className="text-2xl md:text-4xl font-josefin"
-            strings={["Welcome to Aya Lab.", "Haya Labにようこそ！"]}
+            strings={["Welcome to Haya Lab.", "Haya Labにようこそ！"]}
             typeSpeed={140}
             backSpeed={120}
             loop={true}
