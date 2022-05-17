@@ -4,7 +4,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        fancy: ["Dancing Script"],
+        josefin: ["Josefin Sans"]
+      }
+    },
   },
   plugins: [],
 }
