@@ -28,7 +28,7 @@ const index = () => {
   return (
     <section className="relative">
       <Head>
-        <title>Lance Lab</title>
+        <title>Haya Lab</title>
         <link rel="icon" href="/logo.png" />
         <link 
           href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
@@ -71,11 +71,12 @@ const index = () => {
 
       {/* *************************************Aboutセクション***************************************************************************************** */}
 
-      <div id="About" className="flex flex-col min-h-[100vh] max-w-7xl mx-auto">
-        <div className="flex items-center justify-center">
+      
+      <div id="About" className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto">
+        <div className="h-1/5 flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-16 border-b-4">About</h3>
         </div>
-        <div className="md:flex justify-center">
+        <div className="h-4/5 md:flex items-center justify-center md:pb-12">
           <div className="w-full md:w-2/5 flex items-center justify-center">
             <img
               className="h-52 md:h-96 w-52 md:w-96 object-cover rounded-full shadow-2xl"
@@ -99,6 +100,7 @@ const index = () => {
           </div>
         </div>
       </div>
+      
 
       {/* *************************************Aboutセクション***************************************************************************************** */}
 
@@ -106,11 +108,11 @@ const index = () => {
 
       {/* *************************************Skillsセクション***************************************************************************************** */}
 
-      <div className="flex flex-col min-h-[100vh] max-w-7xl mx-auto">
-        <div className="flex items-center justify-center">
+      <div className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto">
+        <div className="h-1/5 flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">Skills</h3>
         </div>
-        <div className="md:flex md:space-x-4 w-full px-5 pt-12 pb-20 rounded-xl md:shadow-xl md:border">
+        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pt-12 pb-14 mb-5 rounded-xl md:shadow-xl md:border">
           <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-3 md:mt-0">
             <div className="flex items-center justify-center mt-3">
               <img 
@@ -165,7 +167,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="w-0.5 bg-gray-200"/>
+          <div className="w-0.5 h-full bg-gray-200"/>
 
           <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-10 md:mt-0">
             <div className="flex items-center justify-center mt-3">
@@ -283,7 +285,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="w-0.5 bg-gray-200"/>
+          <div className="w-0.5 h-full bg-gray-200"/>
 
           <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-10 md:mt-0">
             <div className="flex items-center justify-center mt-3">
