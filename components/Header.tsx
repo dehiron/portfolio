@@ -21,9 +21,9 @@ const Header = () => {
                 </Link>
             </div>
             <div className="hidden md:inline-flex space-x-5">
-                <div className="cursor-pointer"><p className="text-sm">このサイトについて</p></div>
-                <div className="cursor-pointer"><p className="text-sm">プロジェクト</p></div>
-                <div className="cursor-pointer"><p className="text-sm">お問い合わせ</p></div>
+                <div className="cursor-pointer"><p className="text-sm font-josefin">About</p></div>
+                <div className="cursor-pointer"><p className="text-sm font-josefin">Projects</p></div>
+                <div className="cursor-pointer"><p className="text-sm font-josefin">Contact</p></div>
             </div>
 
             <button 
@@ -46,9 +46,9 @@ const Header = () => {
                 </svg>
             </button>
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                <div className="cursor-pointer"><h3>About</h3></div>
-                <div className="cursor-pointer"><h3>My Works</h3></div>
-                <div className="cursor-pointer"><h3>お問い合わせ</h3></div>
+                <div className="cursor-pointer"><p className="text-sm font-josefin">About</p></div>
+                <div className="cursor-pointer"><p className="text-sm font-josefin">Projects</p></div>
+                <div className="cursor-pointer"><p className="text-sm font-josefin">Contact</p></div>
             </Drawer>
         </header>
     )
