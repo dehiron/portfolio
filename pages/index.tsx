@@ -6,6 +6,8 @@ import Image from "next/image";
 import Typed from 'react-typed';
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, SelectorIcon, BadgeCheckIcon } from '@heroicons/react/solid'
+import { ArrowCircleDownIcon } from '@heroicons/react/outline'
+import { Link as Scroll } from "react-scroll";
 
 const devFields = [
   { field: 'フロントエンド' },
@@ -49,12 +51,17 @@ const index = () => {
         />
         <div className="flex flex-col items-center w-full justify-center">
           <Typed
-            className="text-1xl md:text-4xl font-josefin"
-            strings={["Welcome to Haya Lab.", "ハヤラボにようこそ！"]}
+            className="text-2xl md:text-4xl font-semibold font-josefin mt-5 md:mt-10 text-[#323232]"
+            strings={["Welcome to Haya Lab.", "ハヤラボにようこそ。"]}
             typeSpeed={140}
             backSpeed={120}
             // loop={true}
           />
+          <Scroll to="About" smooth={true} duration={600} offset={0}>
+              <ArrowCircleDownIcon 
+                className="w-10 h-10 md:w-14 md:h-14 mt-8 md:mt-14 text-gray-400 animate-pulse"
+              />
+          </Scroll>
         </div>
       </div>
 
@@ -64,29 +71,29 @@ const index = () => {
 
       {/* *************************************Aboutセクション***************************************************************************************** */}
 
-      <div className="flex flex-col min-h-[100vh] max-w-7xl mx-auto">
+      <div id="About" className="flex flex-col min-h-[100vh] max-w-7xl mx-auto">
         <div className="flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-16 border-b-4">About</h3>
         </div>
         <div className="md:flex justify-center">
           <div className="w-full md:w-2/5 flex items-center justify-center">
             <img
-              className="h-64 md:h-96 w-64 md:w-96 object-cover rounded-full shadow-2xl"
+              className="h-52 md:h-96 w-52 md:w-96 object-cover rounded-full shadow-2xl"
               src="/profile_pic.png"
             />
           </div>
-          <div className="w-full md:w-3/5 flex-col items-center justify-center space-y-3 md:space-y-6 p-16">
+          <div className="w-full md:w-3/5 flex-col items-center justify-center space-y-3 md:space-y-6 px-8 py-8 md:px-16 md:py-10" >
             <h3 className="text-xl md:text-2xl font-semibold font-josefin">こんにちは！</h3>
-            <p className="text-base md:text-lg whitespace-pre-wrap font-josefin text-[#323232]">
+            <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin text-[#323232]">
               東京在住・フリーランスでウェブ＆モバイルアプリケーションエンジニアをやっています、Haya Labの綾 秀博です。
             </p>
-            <p className="text-base md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
+            <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
               UIUX・デザイン・データ構造等のプロダクト設計からコードに落とし込む実装開発まで一貫して行えることを強みとしており、0 → 1 でアイディアを形にすることを得意としています。
             </p>
-            <p className="text-base md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
+            <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
               趣味は映画、キャンプ、バイク、旅、サウナ、美味しいものを食べることと美味しいお酒を飲むこととです。仕事中は引きこもりがちなので、休みの時はアクティブに動き回ります笑
             </p>
-            <p className="text-base md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
+            <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
               プロジェクトのご提案や業務提携・その他ご質問やご興味等あれば是非お気軽にコンタクトフォームからご連絡下さい。
             </p>
           </div>
