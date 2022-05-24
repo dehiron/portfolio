@@ -22,7 +22,7 @@ const Contact = () => {
     } = useForm<IFormInput>();
 
     const onSubmit: SubmitHandler<IFormInput> = async (data) => {
-        await fetch("/api/sendInquiry", {
+        await fetch("/api/sendContact", {
             method: "POST",
             body: `
 お名前
@@ -123,7 +123,7 @@ ${data.inquiry}
                     {submitted ? 
                         <div className="flex flex-col p-10 bg-blue-400 text-white">
                             <h3 className="text-3xl font-bold mb-2">
-                                 お問い合わせありがとうございました！
+                                 お問い合わせありがとうございます！
                             </h3>
                             <p>確認後、頂いたメールアドレスにご連絡差し上げます。</p>
                         </div>

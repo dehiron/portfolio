@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Image from "next/image";
 import Typed from 'react-typed';
 import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, SelectorIcon, BadgeCheckIcon, PaperAirplaneIcon } from '@heroicons/react/solid'
+import { CheckIcon, SelectorIcon, BadgeCheckIcon, PaperAirplaneIcon, MenuAlt1Icon } from '@heroicons/react/solid'
 import { ArrowCircleDownIcon } from '@heroicons/react/outline'
 import { Link as Scroll } from "react-scroll";
 import 'swiper/css/bundle'
@@ -27,14 +27,6 @@ const fieldContents = {
   backEnd: ["NodeJs", "Python (Data Science)", "Ruby (Ruby on Rails)", "PostgreSQL", "MySQL"],
   infra: ["GCP", "Firebaseサービス全般", "Vercel Hosting", "Github", "Slack"]
 }
-
-const images = [
-  {
-    title: "TEXTTEXTTEXTTEXTTEXTTEXTTEXT",
-    text: "texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext",
-    imgPath: "/fitto_intro.png",
-  },
-]
 
 const index = () => {
 
@@ -68,14 +60,14 @@ const index = () => {
         <div className="flex flex-col items-center w-full justify-center">
           <Typed
             className="text-2xl md:text-4xl font-semibold font-josefin mt-5 md:mt-10 text-[#323232]"
-            strings={["Welcome to Haya Lab.", "ハヤラボにようこそ。"]}
+            strings={["ハヤラボにようこそ。", "Welcome to Haya Lab."]}
             typeSpeed={140}
             backSpeed={120}
             // loop={true}
           />
           <Scroll to="About" smooth={true} duration={600} offset={24}>
               <ArrowCircleDownIcon 
-                className="w-10 h-10 md:w-14 md:h-14 mt-8 md:mt-14 text-gray-400 animate-pulse"
+                className="w-10 h-10 md:w-14 md:h-14 mt-6 md:mt-10 text-gray-400 animate-pulse"
               />
           </Scroll>
         </div>
@@ -439,7 +431,7 @@ const index = () => {
                     </div>
                     <div className="md:w-5/6">
                       <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-gray-600">
-                        Stripe API(決済)、Google Map API（位置情報）
+                        Stripe API(決済)、Google Map API(位置情報)
                       </p>
                     </div>
                   </div>
@@ -555,7 +547,7 @@ const index = () => {
         <div className="h-4/5 md:flex flex-col items-center justify-center md:space-x-4 w-full px-5 pb-6 mb-3">
           <div className="">
             <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
-              プロジェクトや業務提携のご提案・その他ご質問やご興味等あれば是非お気軽にご連絡下さい。
+              プロジェクトや業務提携のご提案・その他ご質問やご興味等あればお気軽にご連絡下さい。
             </p>
           </div>
           <Link href="/contact">
@@ -564,7 +556,8 @@ const index = () => {
                 ゲット・イン・タッチ
               </p>
               <span className="p-3"/>
-              <PaperAirplaneIcon className="w-7 h-7 text-blue-400 group-hover:text-white"/>
+              {/* <MenuAlt1Icon className="w-7 h-7 text-blue-400 group-hover:text-white rotate-180"/> */}
+              <PaperAirplaneIcon className="w-7 h-7 text-blue-400 group-hover:text-white rotate-90"/>
             </div>
           </Link>
         </div>
