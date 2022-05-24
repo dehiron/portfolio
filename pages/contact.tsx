@@ -43,8 +43,7 @@ ${data.inquiry}
     }
 
     return (
-
-        <div id="terms-of-service" className="max-w-7xl mx-auto">
+        <section className="relative">
             <Head>
                 <title>Haya Lab | お問い合わせ</title>
                 <link rel="icon" href="/logo.png" />
@@ -60,12 +59,7 @@ ${data.inquiry}
 
             <Header />
 
-            <div className="mb-10">
-
-                {/* <div className="flex items-center justify-center bg-blue-200 w-full h-20 md:h-32">
-                    <h1 className="text-2xl md:text-4xl font-extrabold text-center text-white">お問い合わせ</h1>
-                </div> */}
-
+            <div className="mb-10 max-w-7xl mx-auto">
                 <div className="py-8 px-6 md:py-10 md:px-10 space-y-2">
                     <p className="text-lg mb-2">お問い合わせありがとうございます。</p>
                     <p>下記フォームに必要事項を入力・ご確認の上、最下部の送信ボタンを押してください。</p>
@@ -131,17 +125,19 @@ ${data.inquiry}
                         <div className="flex items-center justify-center">
                             <input 
                                 type="submit" 
-                                className="shadow bg-blue-200 hover:bg-blue-400 focus:shadow-outline max-w-2xl w-full
-                                focus:outline-none text-white font-bold py-2 px-4 rounded cursor-pointer"
+                                className="border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg max-w-2xl w-full
+                                focus:outline-none text-blue-400 hover:text-white font-bold py-2 px-4 rounded-full cursor-pointer"
                             />
                         </div>
+                        // <div className="md:w-1/3 flex items-center justify-center border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg cursor-pointer group my-10 py-5 rounded-full mx-10"></div>
                     }
                 </form>
 
             </div>
 
             <Footer />
-        </div>
+    
+        </section>
 
     )
 }

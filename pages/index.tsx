@@ -116,12 +116,12 @@ const index = () => {
 
       {/* *************************************Skillsセクション***************************************************************************************** */}
 
-      <div id="Skills" className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto md:mt-5">
+      <div id="Skills" className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-3 md:mx-auto md:mt-5" >
         <div className="h-1/5 flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">Skills</h3>
         </div>
-        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pt-12 pb-6 mb-3 shadow-md md:border md:border-gray-200 rounded-xl">
-          <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-3 md:mt-0">
+        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pt-12 pb-6 mb-3 shadow-md border border-t-gray-200 rounded-xl">
+          <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-3 md:mt-0 mb-10">
             <div className="flex items-center justify-center mt-3">
               <img 
                 className="w-20 h-20 object-cover"
@@ -175,9 +175,9 @@ const index = () => {
             </div>
           </div>
 
-          <div className="w-0.5 h-full bg-gray-200"/>
+          <div className="w-full h-0.5 md:w-0.5 md:h-full bg-gray-200"/>
 
-          <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-10 md:mt-0">
+          <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-10 md:mt-0 mb-10">
             <div className="flex items-center justify-center mt-3">
               <img 
                 className="w-20 h-20 object-cover"
@@ -293,9 +293,9 @@ const index = () => {
             </div>
           </div>
 
-          <div className="w-0.5 h-full bg-gray-200"/>
+          <div className="w-full h-0.5 md:w-0.5 md:h-full bg-gray-200"/>
 
-          <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-10 md:mt-0">
+          <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-10 md:mt-0 mb-10">
             <div className="flex items-center justify-center mt-3">
               <img 
                 className="w-20 h-20 object-cover"

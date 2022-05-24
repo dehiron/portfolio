@@ -1,40 +1,36 @@
 import Link from "next/link";
+import {Link as Scroll} from "react-scroll";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col justify-between p-5 max-w-7xl mx-auto">
-                {/* <div className="w-full md:flex md:space-x-5 justify-center border-t border-t-blue-200 border-b border-b-gray-200 p-2">
-                    <Link href="/privacy-policy"><div className="cursor-pointer"><p className="text-sm py-1">プライバシーポリシー</p></div></Link>
-                        <div className="bg-gray-200 md:w-0.5" />
-                    <Link href="/terms-of-service"><div className="cursor-pointer"><p className="text-sm py-1">利用規約</p></div></Link>
-                        <div className="bg-gray-200 md:w-0.5" />
-                    <Link href="/company"><div className="cursor-pointer"><p className="text-sm py-1">運営会社</p></div></Link>
-                        <div className="bg-gray-200 md:w-0.5" />
-                    <Link href="/contact"><div className="cursor-pointer"><p className="text-sm py-1">お問い合わせ</p></div></Link>
-                </div> */}
+        <div className="bg-slate-200">
+            <footer className="flex flex-col justify-between p-5 max-w-7xl mx-auto">
 
-                {/* <div className="flex py-5">
-                    <Link href="/">
-                        <img
-                            className="h-12 object-cover cursor-pointer"
-                            src="/fitto_header_logo.png"
-                            // src="https://links.papareact.com/yvf" 
-                            alt=""
-                        />
-                    </Link>
-                </div> */}
+                    <div className="flex flex-col py-5 my-3 items-center justify-center">
+                        <Link href="/">
+                            <img
+                                className="h-12 object-cover cursor-pointer"
+                                src="/logo.png"
+                                alt=""
+                            />
+                        </Link>
+                        <p className="text-sm font-josefin pt-2">Haya Lab</p>
+                        <p className="text-xs font-josefin pt-2">Produced by Hidehiro Aya</p>
+                    </div>
 
-                {/* <div className="space-y-1">
-                    <p className="text-sm">〒150-0013</p>
-                    <p className="text-sm">東京都渋谷区恵比寿1-25-3-502</p>
-                    <p className="text-sm">Perchcamp株式会社</p>
-                    <p className="text-sm">TEL : 070-2683-3956 (代表直通)</p>
-                </div> */}
+                    <div className="flex items-center justify-center space-x-5">
+                        <Link href="https://www.facebook.com/hidehiro.aya/"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/facebook_icon.png" /></a></Link>
+                        <Link href="https://twitter.com/dehironMS"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/twitter_icon.png" /></a></Link>
+                        <Link href="https://www.linkedin.com/in/hidehiro-aya-4726b6179/"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/linkedin_icon.png" /></a></Link>
+                        <Link href="/contact"><a rel="noreferrer"><img className="w-8 h-8" src="/email_icon.png" /></a></Link>
+                    </div>
+                    
 
-                <div className="w-full flex justify-center mt-10">
-                    <p className="text-xs">Copyright ©️ Haya Lab All Rights Reserved.</p>
-                </div>
-        </footer>
+                    <div className="w-full flex justify-center mt-10">
+                        <p className="text-xs">Copyright ©️ Haya Lab All Rights Reserved.</p>
+                    </div>
+            </footer>
+        </div>
     )
 }
 
