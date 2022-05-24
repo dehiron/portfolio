@@ -5,13 +5,14 @@ import Footer from '../components/Footer'
 import Image from "next/image";
 import Typed from 'react-typed';
 import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, SelectorIcon, BadgeCheckIcon } from '@heroicons/react/solid'
+import { CheckIcon, SelectorIcon, BadgeCheckIcon, PaperAirplaneIcon } from '@heroicons/react/solid'
 import { ArrowCircleDownIcon } from '@heroicons/react/outline'
 import { Link as Scroll } from "react-scroll";
 import 'swiper/css/bundle'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Pagination, Navigation } from 'swiper'
 import { getWindowSize } from '../lib/getWindowSize';
+import Link from 'next/link';
 
 SwiperCore.use([Pagination, Navigation]) 
 
@@ -23,7 +24,7 @@ const devFields = [
 
 const fieldContents = {
   frontEnd: ["React & NextJs", "React Native", "HTML & CSS", "JavaScript & TypeScript", "Tailwind CSS"],
-  backEnd: ["NodeJs", "Python", "PostgreSQL", "MySQL"],
+  backEnd: ["NodeJs", "Python (Data Science)", "Ruby (Ruby on Rails)", "PostgreSQL", "MySQL"],
   infra: ["GCP", "Firebaseサービス全般", "Vercel Hosting", "Github", "Slack"]
 }
 
@@ -59,7 +60,7 @@ const index = () => {
 
       {/* *************************************ファーストサイトセクション***************************************************************************************** */}
 
-      <div className="flex relative min-h-[calc(100vh-66px)] mx-auto bg-gradient-to-tr from-gray-600 to-white">
+      <div className="flex relative min-h-[calc(100vh-66px)] mx-auto bg-gradient-to-tr from-gray-600 to-white pb-6 mb-3">
         <img
           src="/hello_world.png"
           className="w-full h-full object-cover absolute mix-blend-overlay"
@@ -72,7 +73,7 @@ const index = () => {
             backSpeed={120}
             // loop={true}
           />
-          <Scroll to="About" smooth={true} duration={600} offset={0}>
+          <Scroll to="About" smooth={true} duration={600} offset={24}>
               <ArrowCircleDownIcon 
                 className="w-10 h-10 md:w-14 md:h-14 mt-8 md:mt-14 text-gray-400 animate-pulse"
               />
@@ -87,11 +88,11 @@ const index = () => {
       {/* *************************************Aboutセクション***************************************************************************************** */}
 
       
-      <div id="About" className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto">
-        <div className="h-1/5 flex items-center justify-center">
-          <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-16 border-b-4">About</h3>
+      <div id="About" className="flex flex-col min-h-[100vh] h-screen max-w-7xl mx-auto md:mt-5">
+        <div className="h-1/5 flex items-center justify-center border-blue-400">
+          <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">About</h3>
         </div>
-        <div className="h-4/5 md:flex items-center justify-center md:pb-12">
+        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pt-12 pb-6 mb-3 bg-slate-100 rounded-xl border-blue-400">
           <div className="w-full md:w-2/5 flex items-center justify-center">
             <img
               className="h-52 md:h-96 w-52 md:w-96 object-cover rounded-full shadow-2xl"
@@ -104,11 +105,11 @@ const index = () => {
               東京在住・フリーランスでウェブ＆モバイルアプリケーションエンジニアをやっています、Haya Labの綾 秀博です。
             </p>
             <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
-              UIUX・デザイン・データ構造等のプロダクト設計からコードに落とし込む実装開発まで一貫して行えることを強みとしており、0 → 1 でアイディアを形にすることを得意としています。
+              UIUX・デザイン・データ構造等のプロダクト設計からコードに落とし込む実装開発まで一貫して行えることを強みとしており、0 → 1 でアイディアを形にすることが大好きです。
             </p>
-            <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
+            {/* <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
               趣味は映画を観ること、キャンプ、バイク、旅、サウナです。仕事中は引きこもりがちなので、休みの時はアクティブに動き回ります。
-            </p>
+            </p> */}
             <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
               プロジェクトのご提案や業務提携・その他ご質問やご興味等あれば是非お気軽にコンタクトフォームからご連絡下さい。
             </p>
@@ -123,11 +124,11 @@ const index = () => {
 
       {/* *************************************Skillsセクション***************************************************************************************** */}
 
-      <div className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto">
+      <div id="Skills" className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto md:mt-5">
         <div className="h-1/5 flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">Skills</h3>
         </div>
-        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pt-12 pb-14 mb-5 rounded-xl shadow-sm md:border md:border-gray-200">
+        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pt-12 pb-6 mb-3 shadow-md md:border md:border-gray-200 rounded-xl">
           <div className="sm: w-full md:w-1/3 flex-col items-center justify-center mt-3 md:mt-0">
             <div className="flex items-center justify-center mt-3">
               <img 
@@ -358,11 +359,11 @@ const index = () => {
 
       {/* *************************************Projectsセクション***************************************************************************************** */}
 
-      <div className="flex flex-col min-h-[100vh] h-screen max-w-7xl mx-auto">
+      <div id="Projects" className="flex flex-col min-h-[100vh] h-screen max-w-7xl mx-auto md:mt-5">
         <div className="h-1/5 flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">Projects</h3>
         </div>
-        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pb-6 mb-3">
+        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pb-6 mb-3 bg-slate-100 rounded-xl">
           <Swiper
             slidesPerView={1} //一度に表示するスライドの数
             pagination={{ clickable: true }} 
@@ -492,7 +493,7 @@ const index = () => {
                 <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-gray-600 border-b-2">
                     使用テックスタック
                   </p>
-                  <div className="w-full md:flex md:flex-col">
+                  <div className="w-full flex flex-col md:flex-row">
                     <div className="md:w-1/6">
                       <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-gray-600">
                         Design
@@ -500,11 +501,11 @@ const index = () => {
                     </div>
                     <div className="md:w-5/6">
                       <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-gray-600">
-                        AdobeXd, Illustrator
+                        AdobeXD, Illustrator
                       </p>
                     </div>
                   </div>
-                  <div className="w-full md:flex md:flex-col">
+                  <div className="w-full flex flex-col md:flex-row">
                     <div className="md:w-1/6">
                       <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-gray-600">
                         FE
@@ -516,7 +517,7 @@ const index = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full md:flex md:flex-col">
+                  <div className="w-full flex flex-col md:flex-row">
                     <div className="md:w-1/6">
                       <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-gray-600">
                         BE&Infra
@@ -529,10 +530,6 @@ const index = () => {
                     </div>
                   </div>
                 </div>
-
-
-
-
               </div>
               <div className="w-1/2 flex items-center justify-center h-full">
                 <img
@@ -551,11 +548,26 @@ const index = () => {
 
       {/* *************************************Contactセクション***************************************************************************************** */}
 
-      <div className="flex flex-col min-h-[100vh] max-w-7xl mx-auto">
-        <div className="flex items-center justify-center">
-          <h3 className=" text-2xl md:text-4xl font-josefin my-20">Contact</h3>
+      <div className="flex flex-col max-w-7xl mx-auto md:mt-5">
+        <div className="h-1/5 flex items-center justify-center">
+          <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">Contact</h3>
         </div>
-        
+        <div className="h-4/5 md:flex flex-col items-center justify-center md:space-x-4 w-full px-5 pb-6 mb-3">
+          <div className="">
+            <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin  text-[#323232]">
+              プロジェクトや業務提携のご提案・その他ご質問やご興味等あれば是非お気軽にご連絡下さい。
+            </p>
+          </div>
+          <Link href="/contact">
+            <div className="md:w-1/3 flex items-center justify-center border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg cursor-pointer group my-10 py-5 rounded-full mx-10">
+              <p className="text-base md:text-xl text-blue-400 group-hover:text-white text-center">
+                ゲット・イン・タッチ
+              </p>
+              <span className="p-3"/>
+              <PaperAirplaneIcon className="w-7 h-7 text-blue-400 group-hover:text-white"/>
+            </div>
+          </Link>
+        </div>
       </div>
 
       {/* *************************************Contactセクション***************************************************************************************** */}

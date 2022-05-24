@@ -11,6 +11,7 @@
     "next": "latest",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-hook-form": "^7.31.2",
     "react-scroll": "^1.8.7",
     "react-typed": "^1.2.0",
     "swiper": "^8.1.5"

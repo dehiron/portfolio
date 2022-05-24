@@ -32,7 +32,7 @@ const Footer = () => {
                 </div> */}
 
                 <div className="w-full flex justify-center mt-10">
-                    <p className="text-xs">Copyright ©️ Lance Lab All Rights Reserved.</p>
+                    <p className="text-xs">Copyright ©️ Haya Lab All Rights Reserved.</p>
                 </div>
         </footer>
     )
