@@ -43,7 +43,7 @@ ${data.inquiry}
     }
 
     return (
-        <section className="relative">
+        <section className="flex flex-col justify-between min-h-screen">
             <Head>
                 <title>Haya Lab | お問い合わせ</title>
                 <link rel="icon" href="/logo.png" />

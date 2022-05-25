@@ -21,6 +21,7 @@ const Footer = () => {
                     <div className="flex items-center justify-center space-x-5">
                         <Link href="https://www.facebook.com/hidehiro.aya/"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/facebook_icon.png" /></a></Link>
                         <Link href="https://twitter.com/dehironMS"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/twitter_icon.png" /></a></Link>
+                        <Link href="https://github.com/dehiron"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/github_icon.png" /></a></Link>
                         <Link href="https://www.linkedin.com/in/hidehiro-aya-4726b6179/"><a target="_blank" rel="noreferrer"><img className="w-8 h-8" src="/linkedin_icon.png" /></a></Link>
                         <Link href="/contact"><a rel="noreferrer"><img className="w-8 h-8" src="/email_icon.png" /></a></Link>
                     </div>
