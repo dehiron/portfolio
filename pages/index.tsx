@@ -59,7 +59,7 @@ const index = () => {
         />
         <div className="flex flex-col items-center w-full justify-center">
           <Typed
-            className="text-2xl md:text-4xl font-semibold font-josefin mt-5 md:mt-10 text-[#323232]"
+            className="text-xl md:text-4xl font-semibold font-josefin mt-5 md:mt-10 text-[#323232]"
             strings={["ハヤラボにようこそ。", "Welcome to Haya Lab."]}
             typeSpeed={140}
             backSpeed={120}
@@ -91,7 +91,7 @@ const index = () => {
               src="/profile_pic.png"
             />
           </div>
-          <div className="w-full md:w-3/5 flex-col items-center justify-center space-y-3 md:space-y-6 px-8 py-8 md:px-16 md:py-10" >
+          <div className="w-full md:w-3/5 flex-col items-center justify-center space-y-3 md:space-y-6 px-3 py-8 md:px-16 md:py-10" >
             <h3 className="text-xl md:text-2xl font-semibold font-josefin">こんにちは！</h3>
             <p className="text-sm md:text-lg whitespace-pre-wrap font-josefin text-[#323232]">
               東京在住・フリーランスでウェブ＆モバイルアプリケーションエンジニアをやっています、Haya Labの綾 秀博です。
@@ -133,17 +133,17 @@ const index = () => {
                 プロダクトデザイン
               </h3>
             </div>
-            <div className="flex items-center justify-center py-2 px-3 md:px-5">
+            <div className="flex items-center justify-center py-2 px-2 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
                 UI/UXを考えたデザイン設計、プロダクトリリース初期だけではなくスケール後までをも考慮したデータ構造・インフラ設計など、プロダクトデザイン全般の設計をお任せください。
               </p>
             </div>
-            <div className="flex items-center justify-start mt-3 px-3 md:px-5">
+            <div className="flex items-center justify-start mt-3 px-2 md:px-5">
               <h3 className="text-lg font-semibold">
                 使用ツールと環境
               </h3>
             </div>
-            <div className="flex flex-col items-start justify-center px-3 md:px-5 py-3 space-y-3 text-gray-600">
+            <div className="flex flex-col items-start justify-center px-2 md:px-5 py-3 space-y-3 text-gray-600">
               <div className="flex items-center justidy-center">
                 <div className="w-1/">
                   <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
@@ -191,13 +191,13 @@ const index = () => {
                 ソフトウェア開発
               </h3>
             </div>
-            <div className="flex items-center justify-center py-2 px-3 md:px-5">
+            <div className="flex items-center justify-center py-2 px-2 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
                 フロント〜エンド〜インフラを通して一貫したウェブ・モバイルアプリケーション開発全般をスクラッチベースで行います。
                 また、ネット決済に欠かせないStripeAPIの組込みも承ります。
               </p>
             </div>
-            <div className="md:flex items-end justify-start mt-3 px-3 md:px-5 space-y-2 md:space-y-0 md:space-x-3">
+            <div className="md:flex items-end justify-start mt-3 px-2 md:px-5 space-y-2 md:space-y-0 md:space-x-3">
               <h3 className="text-lg font-semibold">
                 使用ツールと環境
               </h3>
@@ -265,7 +265,7 @@ const index = () => {
                 </Listbox>
               </div>
             </div>
-            <div className=" flex flex-col items-start justify-center px-3 md:px-5 py-3 space-y-3 text-gray-600">
+            <div className=" flex flex-col items-start justify-center px-2 md:px-5 py-3 space-y-3 text-gray-600">
               { selectedDevField.field === "フロントエンド" ? 
                 fieldContents.frontEnd.map((content, contentIndex) => (
                   <div className="flex items-center justidy-center" key={contentIndex}>
@@ -309,19 +309,19 @@ const index = () => {
                 メンタリング＆コンサルティング
               </h3>
             </div>
-            <div className="flex items-center justify-center py-2 px-3 md:px-5">
+            <div className="flex items-center justify-center py-2 px-2 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
                 スタートアップ立上げ・経営の経験と、外資系保険/国内最大手アパレル企業にてデータサイエンティストとして勤務した経験を活かし、
                 メンタリングや各種IT/DXソリューション導入のコンサルティングを承ります。
               </p>
             </div>
             
-            <div className="flex items-center justify-start mt-3 px-3 md:px-5">
+            <div className="flex items-center justify-start mt-3 px-2 md:px-5">
               <h3 className="text-lg font-semibold">
                 経験と実績
               </h3>
             </div>
-            <div className="flex flex-col items-start justify-center px-3 md:px-5 py-3 space-y-3 text-gray-600">
+            <div className="flex flex-col items-start justify-center px-2 md:px-5 py-3 space-y-3 text-gray-600">
               <div className="flex items-center justify-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
                 <p className="text-xs md:text-sm text-start">0 → 1フェーズのプロダクト・新規事業開発</p>
@@ -357,7 +357,7 @@ const index = () => {
         <div className="h-1/5 flex items-center justify-center">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">Projects</h3>
         </div>
-        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-5 pb-6 mb-3 bg-slate-100 rounded-xl">
+        <div className="h-4/5 md:flex items-center md:space-x-4 w-full px-2 md:px-5 pb-6 mb-3 bg-slate-100 rounded-xl">
           <Swiper
             slidesPerView={1} //一度に表示するスライドの数
             pagination={{ clickable: true }} 
