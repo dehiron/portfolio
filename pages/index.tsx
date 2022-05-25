@@ -80,7 +80,7 @@ const index = () => {
       {/* *************************************Aboutセクション***************************************************************************************** */}
 
       
-      <div id="About" className="flex flex-col min-h-[100vh] h-screen max-w-7xl mx-auto md:mt-5">
+      <div id="About" className="flex flex-col min-h-[100vh] md:h-screen max-w-7xl mx-auto md:mt-5">
         <div className="h-1/5 flex items-center justify-center border-blue-400">
           <h3 className=" text-2xl md:text-4xl font-josefin my-10 md:my-12 border-b-4">About</h3>
         </div>
@@ -133,42 +133,44 @@ const index = () => {
                 プロダクトデザイン
               </h3>
             </div>
-            <div className="flex items-center justify-center py-2 px-5">
+            <div className="flex items-center justify-center py-2 px-3 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
                 UI/UXを考えたデザイン設計、プロダクトリリース初期だけではなくスケール後までをも考慮したデータ構造・インフラ設計など、プロダクトデザイン全般の設計をお任せください。
               </p>
             </div>
-            <div className="flex items-center justify-start mt-3 px-5">
+            <div className="flex items-center justify-start mt-3 px-3 md:px-5">
               <h3 className="text-lg font-semibold">
                 使用ツールと環境
               </h3>
             </div>
-            <div className="flex flex-col items-start justify-center px-5 py-3 space-y-3 text-gray-600">
+            <div className="flex flex-col items-start justify-center px-3 md:px-5 py-3 space-y-3 text-gray-600">
               <div className="flex items-center justidy-center">
-                <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">Figma</p>
+                <div className="w-1/">
+                  <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
+                </div>
+                <p className="text-xs md:text-sm text-start">Figma</p>
               </div>
               <div className="flex items-center justidy-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">
+                <p className="text-xs md:text-sm text-start">
                   Adobe Xd
                 </p>
               </div>
               <div className="flex items-center justidy-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">
+                <p className="text-xs md:text-sm text-start">
                   Adobe Illustrator
                 </p>
               </div>
               <div className="flex items-center justidy-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">
+                <p className="text-xs md:text-sm text-start">
                   ペンと紙によるスケッチ
                 </p>
               </div>
               <div className="flex items-center justidy-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">
+                <p className="text-xs md:text-sm text-start">
                   Google Slide/Docs/SS等のクラウドツール
                 </p>
               </div>
@@ -189,13 +191,13 @@ const index = () => {
                 ソフトウェア開発
               </h3>
             </div>
-            <div className="flex items-center justify-center py-2 px-5">
+            <div className="flex items-center justify-center py-2 px-3 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
                 フロント〜エンド〜インフラを通して一貫したウェブ・モバイルアプリケーション開発全般をスクラッチベースで行います。
                 また、ネット決済に欠かせないStripeAPIの組込みも承ります。
               </p>
             </div>
-            <div className="md:flex items-end justify-start mt-3 px-5 space-y-2 md:space-y-0 md:space-x-3">
+            <div className="md:flex items-end justify-start mt-3 px-3 md:px-5 space-y-2 md:space-y-0 md:space-x-3">
               <h3 className="text-lg font-semibold">
                 使用ツールと環境
               </h3>
@@ -263,12 +265,12 @@ const index = () => {
                 </Listbox>
               </div>
             </div>
-            <div className=" flex flex-col items-start justify-center px-5 py-3 space-y-3 text-gray-600">
+            <div className=" flex flex-col items-start justify-center px-3 md:px-5 py-3 space-y-3 text-gray-600">
               { selectedDevField.field === "フロントエンド" ? 
                 fieldContents.frontEnd.map((content, contentIndex) => (
                   <div className="flex items-center justidy-center" key={contentIndex}>
                     <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                    <p className="text-sm text-start">{content}</p>
+                    <p className="text-xs md:text-sm text-start">{content}</p>
                   </div>
                 ))
                 :
@@ -276,7 +278,7 @@ const index = () => {
                 fieldContents.backEnd.map((content, contentIndex) => (
                   <div className="flex items-center justidy-center" key={contentIndex}>
                     <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                    <p className="text-sm text-start">{content}</p>
+                    <p className="text-xs md:text-sm text-start">{content}</p>
                   </div>
                 ))
                 :
@@ -284,7 +286,7 @@ const index = () => {
                 fieldContents.infra.map((content, contentIndex) => (
                   <div className="flex items-center justidy-center" key={contentIndex}>
                     <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                    <p className="text-sm text-start">{content}</p>
+                    <p className="text-xs md:text-sm text-start">{content}</p>
                   </div>
                 ))
                 :
@@ -307,38 +309,38 @@ const index = () => {
                 メンタリング＆コンサルティング
               </h3>
             </div>
-            <div className="flex items-center justify-center py-2 px-5">
+            <div className="flex items-center justify-center py-2 px-3 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
                 スタートアップ立上げ・経営の経験と、外資系保険/国内最大手アパレル企業にてデータサイエンティストとして勤務した経験を活かし、
                 メンタリングや各種IT/DXソリューション導入のコンサルティングを承ります。
               </p>
             </div>
             
-            <div className="flex items-center justify-start mt-3 px-5">
+            <div className="flex items-center justify-start mt-3 px-3 md:px-5">
               <h3 className="text-lg font-semibold">
                 経験と実績
               </h3>
             </div>
-            <div className="flex flex-col items-start justify-center px-5 py-3 space-y-3 text-gray-600">
+            <div className="flex flex-col items-start justify-center px-3 md:px-5 py-3 space-y-3 text-gray-600">
               <div className="flex items-center justify-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">0 → 1フェーズのプロダクト・新規事業開発</p>
+                <p className="text-xs md:text-sm text-start">0 → 1フェーズのプロダクト・新規事業開発</p>
               </div>
               <div className="flex items-center justify-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">顧客ニーズ開拓の為のユーザーインタビュー</p>
+                <p className="text-xs md:text-sm text-start">市場ニーズ把握の為のユーザーインタビュー</p>
               </div>
               <div className="flex items-center justify-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">Pd機能改善の為のユーザーヒアリングとテスト</p>
+                <p className="text-xs md:text-sm text-start">Pd機能改善の為のユーザーヒアリングとテスト</p>
               </div>
               <div className="flex items-center justify-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">某企業での社内DX推進ツール導入</p>
+                <p className="text-xs md:text-sm text-start">業務効率改善に向けたデータ収集スキーム構築</p>
               </div>
               <div className="flex items-center justify-center">
                 <BadgeCheckIcon className="h-4 w-4 text-gray-500 mr-1"/>
-                <p className="text-sm text-start">トレンドに基づいたIT/DXソリューション提案</p>
+                <p className="text-xs md:text-sm text-start">トレンドに基づいたIT/DXソリューション提案</p>
               </div>
             </div>
           </div>
@@ -551,7 +553,7 @@ const index = () => {
             </p>
           </div>
           <Link href="/contact">
-            <div className="md:w-1/3 flex items-center justify-center border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg cursor-pointer group my-10 py-5 rounded-full mx-10">
+            <div className="w-4/5 md:w-1/3 flex items-center justify-center border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg cursor-pointer group my-10 py-3 md:py-5 rounded-full mx-10">
               <p className="text-base md:text-xl text-blue-400 group-hover:text-white text-center">
                 ゲット・イン・タッチ
               </p>
