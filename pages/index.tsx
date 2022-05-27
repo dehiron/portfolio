@@ -46,6 +46,7 @@ const index = () => {
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" 
           rel="stylesheet"
         />
+        desription={"恵比寿で働くエンジニアHaya Lab（ハヤラボ）のポートフォリオサイト"}
       </Head>
 
       <Header />
@@ -193,7 +194,7 @@ const index = () => {
             </div>
             <div className="flex items-center justify-center py-2 px-2 md:px-5">
               <p className="text-sm whitespace-pre-wrap font-josefin text-gray-600">
-                フロント〜エンド〜インフラを通して一貫したウェブ・モバイルアプリケーション開発全般をスクラッチベースで行います。
+                フロントーエンドーインフラを通して一貫したソフトウェア開発全般をスクラッチベースで行います。WordPress制作もお任せください。
                 また、ネット決済に欠かせないStripeAPIの組込みも承ります。
               </p>
             </div>
@@ -236,7 +237,7 @@ const index = () => {
                             key={fieldIndex}
                             className={({ active }) =>
                               `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                                active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'
+                                active ? 'bg-blue-100 text-amber-900' : 'text-gray-900'
                               }`
                             }
                             value={devField}

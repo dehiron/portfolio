@@ -14,14 +14,18 @@ interface IFormInput {
 const Contact = () => {
 
     const [submitted, setSubmitted] = useState(false);
+    const [submitProcessing, setSubmitProcessing] = useState(false);
 
     const {
         register,
         handleSubmit,
         formState: {errors},
-    } = useForm<IFormInput>();
+    } = useForm<IFormInput>({
+        mode: "onChange"
+    });
 
     const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+        setSubmitProcessing(true);
         await fetch("/api/sendContact", {
             method: "POST",
             body: `
@@ -36,11 +40,14 @@ ${data.inquiry}
             `,
         }).then(() => {
             setSubmitted(true);
+            setSubmitProcessing(false);
         }).catch((err) => {
             console.log(err);
             setSubmitted(false);
+            setSubmitProcessing(false);
         })
     }
+    
 
     return (
         <section className="flex flex-col justify-between min-h-screen">
@@ -125,11 +132,12 @@ ${data.inquiry}
                         <div className="flex items-center justify-center">
                             <input 
                                 type="submit" 
-                                className="border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg max-w-2xl w-full
-                                focus:outline-none text-blue-400 hover:text-white font-bold py-2 px-4 rounded-full cursor-pointer"
+                                disabled={submitProcessing}
+                                className={submitProcessing 
+                                    ? "border-2 border-white bg-gray-200 max-w-2xl w-full text-white font-bold py-2 px-4 rounded-full" 
+                                    : "border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg max-w-2xl w-full focus:outline-none text-blue-400 hover:text-white font-bold py-2 px-4 rounded-full cursor-pointer"}
                             />
                         </div>
-                        // <div className="md:w-1/3 flex items-center justify-center border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg cursor-pointer group my-10 py-5 rounded-full mx-10"></div>
                     }
                 </form>
 

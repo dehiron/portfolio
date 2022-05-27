@@ -2,7 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { createTransport } from "nodemailer"
 
 export default async function sendContact(req:NextApiRequest, res:NextApiResponse) {
-    console.log(req.body)
     const transporter = createTransport({
         service: "gmail",
         port: 587,
@@ -15,9 +14,9 @@ export default async function sendContact(req:NextApiRequest, res:NextApiRespons
 
     try {
         await transporter.sendMail({
-            from: "",
-            to: "",
-            subject: "お問い合わせ",
+            from: "no-reply@hayalab.me",
+            to: "info@hayalab.me",
+            subject: "【hayalab.me】お問い合わせ",
             text: req.body,
         });
     } catch (err) {
