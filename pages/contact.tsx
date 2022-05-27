@@ -129,7 +129,6 @@ ${data.inquiry}
                                 focus:outline-none text-blue-400 hover:text-white font-bold py-2 px-4 rounded-full cursor-pointer"
                             />
                         </div>
-                        // <div className="md:w-1/3 flex items-center justify-center border-2 border-blue-400 hover:border-white hover:bg-[#8EDFF0] hover:shadow-lg cursor-pointer group my-10 py-5 rounded-full mx-10"></div>
                     }
                 </form>
 
