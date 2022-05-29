@@ -39,14 +39,12 @@ const index = () => {
         <title>Haya Lab</title>
         <link rel="icon" href="/logo.png" />
         <link 
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-          rel="stylesheet"
-        />
-        <link 
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" 
           rel="stylesheet"
         />
-        desription={"恵比寿で働くエンジニアHaya Lab（ハヤラボ）のポートフォリオサイト"}
+        <meta property="description" content={"恵比寿で働くエンジニアHaya Lab（ハヤラボ）のポートフォリオサイト"} />
+        <meta property="og:title" content={"Haya Lab"} />
+        <meta property="og:description" content={"恵比寿で働くエンジニアHaya Lab（ハヤラボ）のポートフォリオサイト"} />
       </Head>
 
       <Header />
