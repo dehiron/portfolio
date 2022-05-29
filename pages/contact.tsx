@@ -53,7 +53,7 @@ ${data.inquiry}
         <section className="flex flex-col justify-between min-h-screen">
             <Head>
                 <title>Haya Lab | お問い合わせ</title>
-                <link rel="icon" href="/logo.png" />
+                <link rel="icon" href="/logo2.png" />
                 <link 
                     href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
                     rel="stylesheet"

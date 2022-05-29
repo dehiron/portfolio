@@ -18,7 +18,7 @@ const Header = () => {
                     <Link href="/">
                         <img
                             className="h-8 md:h-12 object-contain cursor-pointer"
-                            src="/header_logo.png"
+                            src="/header_logo3.png"
                             alt=""
                         />
                     </Link>
