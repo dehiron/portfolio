@@ -10,7 +10,7 @@ const Footer = () => {
                         <Link href="/">
                             <img
                                 className="h-12 object-cover cursor-pointer"
-                                src="/logo.png"
+                                src="/logo2.png"
                                 alt=""
                             />
                         </Link>
