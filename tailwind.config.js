@@ -6,7 +6,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fancy: ["Dancing Script"],
         josefin: ["Josefin Sans"]
       },
       // animation: {
