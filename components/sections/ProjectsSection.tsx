@@ -99,10 +99,13 @@ const ProjectsSection = () => {
                             </div>
 
                             <div className="flex flex-col items-start justify-center px-3 md:px-12 pt-3">
-                                <img
+                                {/* <img
                                     className="h-8 md:h-12" 
                                     src={"/app_store_logo.svg"}
-                                />
+                                /> */}
+                                <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-red-400">
+                                    ※現在特許出願手続き中にあたり、2022年7月末にリリース予定
+                                </p>
                             </div>
                         </div>
                         <div className="w-1/2 flex items-center justify-center h-full">
