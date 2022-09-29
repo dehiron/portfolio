@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { getWindowSize } from '../../lib/getWindowSize';
 import 'swiper/css/bundle'
 import SwiperCore, { Pagination, Navigation } from 'swiper'
+import Link from 'next/link';
 
 SwiperCore.use([Pagination, Navigation]) 
 
@@ -98,14 +99,19 @@ const ProjectsSection = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col items-start justify-center px-3 md:px-12 pt-3">
-                                {/* <img
-                                    className="h-8 md:h-12" 
-                                    src={"/app_store_logo.svg"}
-                                /> */}
-                                <p className="text-[8px] md:text-sm whitespace-pre-wrap font-josefin text-red-400">
-                                    ※現在特許出願手続き中にあたり、2022年7月末にリリース予定
-                                </p>
+                            <div className="flex flex-col md:flex-row items-start justify-center px-3 md:px-12 pt-3 md:space-x-5">
+                                <Link href="https://apps.apple.com/app/fitto/id1619037987">
+                                    <img
+                                        className="h-11 md:h-12" 
+                                        src={"/app_store_logo.svg"}
+                                    />
+                                </Link>
+                                <Link href="https://play.google.com/store/apps/details?id=com.fitto" >
+                                    <img
+                                        className="h-9 md:h-12 mt-2 md:mt-0 " 
+                                        src={"/google_play_badge.svg"}
+                                    />
+                                </Link>
                             </div>
                         </div>
                         <div className="w-1/2 flex items-center justify-center h-full">
